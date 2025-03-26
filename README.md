@@ -4,8 +4,7 @@ This repository contains the official code of our paper, *"Gradient-Free Sparse 
 ![overview](imgs/overview.png)
 
 ## Setup
-1. Download Required Files
-    Download the PASCAL VOC 2007 Dataset from [here](https://www.kaggle.com/datasets/zaraks/pascal-voc-2007/data),
+1. Download the PASCAL VOC 2007 Dataset from [here](https://www.kaggle.com/datasets/zaraks/pascal-voc-2007/data),
 
     or download the subset of PASCAL VOC 2007 used in our experiments from [here](https://www.kaggle.com/datasets/cuonglch/pascalvoc-testset-ver1/data).
 

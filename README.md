@@ -68,7 +68,7 @@ If you use our source code, please cite our work as:
 ```bibtex
 @inproceedings{CuongTriGecco2025,
   author       = {Chi Cuong Le, Tri Phan, Ngoc Hoang Luong},
-  title        = {Gradient-Free Sparse Adversarial Attack on Object Detection Models},
+  title        = {{Gradient-Free Sparse Adversarial Attack on Object Detection Models}},
   booktitle    = {GECCO '25: Proceedings of the Genetic and Evolutionary Computation Conference},
   address      = {Málaga, Spain},
   publisher    = {{ACM}},

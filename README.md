@@ -29,7 +29,7 @@ This repository contains the official code of our paper, *"Gradient-Free Sparse 
     ``` 
 
 ## Reproducing the results
-- You can reproduce the results in our paper for YOLO models by runing the following scripts:
+- You can reproduce the results in our paper for YOLO models directly by running the following scripts:
 
     1. `GA (T = 2)`: not using archive, tournament size `T = 2`.
         ```cmd

@@ -1,5 +1,5 @@
 from LossFunction import UntargetedLoss
-from POPOP import POPOP
+from GA import POPOP
 from utils import NonOverLappingFilter, saveImg
 
 import os

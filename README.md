@@ -6,7 +6,7 @@ This repository contains the official code of our paper, *"Gradient-Free Sparse 
 ## Setup
 1. Download Required Files
     Download the PASCAL VOC 2007 Dataset from [here](https://www.kaggle.com/datasets/zaraks/pascal-voc-2007/data),
-    
+
     or download the subset of PASCAL VOC 2007 used in our experiments from [here](https://www.kaggle.com/datasets/cuonglch/pascalvoc-testset-ver1/data).
 
     The dataset should be organized in this structure (optional):    
@@ -50,7 +50,7 @@ This repository contains the official code of our paper, *"Gradient-Free Sparse 
         $ python main.py --model_name <MODEL_NAME> --img_path <PATH_TO_Images> --tournament_size 4
         ```
 
-- More details of parameters can be found in [`main.py`](https://github.com/LCCuong/Gradient-Free-Sparse-Adversarial-Attack-on-Object-Detection-Models/main.py#L25).
+- More details of parameters can be found in [`main.py`](https://github.com/LCCuong/Gradient-Free-Sparse-Adversarial-Attack-on-Object-Detection-Models/blob/master/main.py#L25).
 
 
 <!-- # Visualization -->

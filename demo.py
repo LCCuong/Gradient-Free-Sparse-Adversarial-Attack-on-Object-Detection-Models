@@ -1,7 +1,6 @@
 from LossFunction import UntargetedLoss
 from POPOP import POPOP
 from utils import NonOverLappingFilter, saveImg
-# from ImportantPixels import importantPixels
 
 import os
 import random
@@ -89,7 +88,6 @@ if __name__ == "__main__":
                   'max_archive_size': 1000,
                   'elite_prob': 0.5,
                   'early_stop': 1 if early_stop else 0,
-                #   'important_pixels': importantPixels_list
                 }
 
                 attack = POPOP(params)

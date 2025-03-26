@@ -10,7 +10,6 @@ class UntargetedLoss:
         self._lambda = _lambda
 
   def __call__(self, image, values, prev_conf): # image is np.array with integer value from 0 - 255
-        # change this (addition variables: prev_conf. Return: same + conf list (highest) with sign. Modifying new loss: log(current_cof with sign - prev_conf with sign), the strategy remain the same)
         data = self.model(image)
         
         is_adver = False
@@ -23,9 +22,7 @@ class UntargetedLoss:
             candidates_IoU = []
             for res in data:
                 box = res[:4].astype(np.int64)
-                # print(self.gt_box, box)
                 cal_IoU = IoU(gt_box, box)
-                # print(cal_IoU)
                 if cal_IoU > 0.5:
                     candidates.append(res)
                     candidates_IoU.append(cal_IoU)
@@ -63,7 +60,6 @@ class UntargetedLoss:
                 f_score_list.append(max(f_score))
             f_score = np.mean(f_score)
 
-            # L = IOU_score + 2 * f_score - prev_conf[idx] + 10 ** (-int(np.log10(3 * len(values[idx])))) * np.linalg.norm(values[idx].flatten(), ord = 0)
             L = IOU_score + 2 * f_score - prev_conf[idx] + np.linalg.norm(values[idx].flatten(), ord = 0) / (3 * len(values[idx]))
             score_list.append(L)
             adver_list.append(adver)
@@ -75,4 +71,4 @@ class UntargetedLoss:
         
         L = np.sum(score_list)
         
-        return is_adver, L, score_list, adver_list, f_score_list  # Loss = sum(AVG(log(1 - IOU)) + AVG(log(f_true) - log(f_other)) + lambda * l0) for each object in original image
+        return is_adver, L, score_list, adver_list, f_score_list  

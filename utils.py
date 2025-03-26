@@ -51,4 +51,3 @@ def saveImg(model, img, pos, values, boxes, path):
 
     perturbed_img = np.clip(perturbed_img, 0, 1)
     model.saveRes((perturbed_img * 255).astype(np.uint8), path)
-

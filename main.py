@@ -57,7 +57,7 @@ if __name__ == '__main__':
     if not os.path.exists("results"):
         os.mkdir("results")
 
-    for name in img_list[:len(img_list) // 2 + 1]:
+    for name in img_list:
         folder = os.path.join("results", name.replace(name[-4:], ""))
         if not os.path.exists(folder):
             os.mkdir(folder)
